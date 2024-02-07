@@ -1,0 +1,40 @@
+
+
+
+
+/* Menu central */
+
+.menu-central {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 350px;
+    margin-top: 15px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.menu-central .search-box {
+    background: var(--sidebar-color);
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.search-box input {
+    background: var(--sidebar-color);
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 6px;
+}
+
+.search-box .search-icon {
+    color: var(--text-color);
+}
+
+.menu-central .profile img {
+    width: 60px;
+    border-radius: 100%;
+}

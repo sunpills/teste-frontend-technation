@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Coisas do body e etc */ 
+
+:root {
+    --body-color: #f0f0f0;
+    --background-color: #fafafa;
+    --primary-color: #FF6600;
+    --primary-color-light: #FF6600;
+    --toggle-color: #3BA5E0;
+    --text-color:#525252;
+    --shadows: #ebe0db;
+    --h1: black;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+/* Sidebar */ 
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--background-color);
+    transition: var(--tran-03);
+    z-index: 1;
+    box-shadow: 1px 1px 2px var(--shadows);
+}
+
+.sidebar.close {
+    width: 88px;
+}
+
+.sidebar .text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--tran-04);
+    white-space: nowrap;
+    opacity: 10;
+}
+
+.sidebar.close .text {
+    opacity: 0;
+    display: none;
+}
+
+.sidebar .image {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+
+.sidebar li .icon,
+.sidebar li .text {
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar .image-text img {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .organization {
+    font-weight: 600;
+    margin-left: 5px;
+    color: var(--h1);
+}
+
+.header-text .subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: -2px;
+    margin-left: 5px;
+}
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background: var(--primary-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--background-color);
+    font-size: 22px;
+    transition: var(--tran-03);
+}
+
+.sidebar.close header .toggle {
+    transform: translateY(-50%);
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.sidebar li a:hover {
+    background: var(--primary-color-light);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--background-color);
+}
+
+.sidebar .menu-bar {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Section Main Content */
+
+.main-content {
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    transition: var(--tran-04);
+    padding: 1rem;
+}
+
+.header-wrapper {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 2rem;
+    border-radius: 6px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-box {
+    display: flex;
+    background: var(--background-color);
+    border-radius: 6px;
+    color: var(--text-color);
+    align-items: center;
+    gap: 0.5rem;
+    padding: 4px 12px;
+    box-shadow: 2px 1px 3px var(--shadows);
+}
+
+.search-box input {
+    background: transparent;
+    padding: 7px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: var(--text-color);
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.search-box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.search-box i:hover {
+    transform: scale(1.1);
+}
+
+
+.header-wrapper img {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sidebar.close ~ .main-content {
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+/* Card Container */ 
+
+.card-container {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-title {
+    color: var(--primary-color-light);
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.total-value-note-card {
+    background: var(--background-color);
+    border-radius: 6px;
+    padding: 1.2rem;
+    width: 220px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--tran-05);
+    box-shadow: 2px 1px 3px var(--shadows);
+}
+
+.total-value-note-card:hover {
+    transform: translateY(-4px);
+}
+
+.total-value-note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.total-value-note-amount {
+    display: flex;
+    flex-direction: column;
+}
+
+.total-value-note-title {
+    font-size: 10px;
+    color: #6d6d6d;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.total-value-note-text {
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.total-value-note-icon {
+    color: var(--background-color);
+    padding: 0.45rem;
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 1.0rem;
+    background-color: var(--primary-color);
+}
+
+.total-value-note-plus-icon i {
+    padding: 0.5rem;
+}
+
+.total-value-note-detail {
+    font-size: 10px;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--h1);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* Notas Fiscais */
+
+.notas-fiscais-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Notas fiscais Filtros */ 
+
+option {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    padding-left: 0.5rem;
+}
+
+select {
+  font-size: 10px;
+  background: var(--body-color);
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 6px;
+  padding-left: 0.5rem;
+}
+
+.filter-text {
+    padding-top: 0.5rem;
+    font-size: 11px;
+    color: rgb(102, 102, 102);
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.filter-card {
+    background: var(--background-color);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin-left: 35px;
+    max-width: 1100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--tran-05);
+    box-shadow: 2px 1px 3px var(--shadows);
+}
+
+/* Notas Fiscais Tabelas */
+
+.table-title {
+    color: var(--primary-color-light);
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 35px;
+    font-weight: bold;
+}
+
+.table-wrapper {
+    background: var(--background-color);
+    margin-top: 1rem;
+    border-radius: 6px;
+    padding: 1rem;
+    max-width: 1100px;
+    display: flex;
+    margin-left: 35px;
+    flex-direction: column;
+    box-shadow: 2px 1px 3px var(--shadows);
+}
+
+.table-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+thead {
+    background: transparent;
+    font-weight: 600 !important;
+}
+
+tbody {
+    background: var(--body-color);
+}
+
+td {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-color);
+    padding: 6px;
+}
+
+tr:nth-child(even) {
+    background: var(--background-color);
+}
+
+.users-data {
+    font-weight: 300 !important;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+tfoot {
+    background: var(--primary-color);
+    font-weight: 600;
+    color: var(--background-color);
+}
+
+tfoot td {
+    padding: 15px;
+}
+
+.table-container button {
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+/* Para sobrescrever as propriedades do CSS do BootStrap */
+
+th {
+    padding: 15px;
+    text-align: center !important;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.close {
+    opacity: 100 !important;
+}
+
+.close:hover {
+    opacity: 0;
+}
+
+.btn:first-child {
+    font-size: 12px;
+    background: rgb(0, 0, 0) !important;
+}
+
+.dropdown-item {
+    font-size: 12px !important;
+}
+
+/* Gráficos */ 
+
+.chart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+}
+
+canvas {
+    background: var(--background-color);
+    box-shadow: 2px 1px 3px var(--shadows);
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-top: 2rem;
+    width: 400px;
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 30px;
+    box-shadow: 2px 1px 3px var(--shadows);
+}

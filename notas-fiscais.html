@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Fiscais - Unecont</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/src/assets/img/unecont-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/src/assets/img/unecont-logo.png" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="organization">Unecont</span>
+                    <span class="subtitle">Sistema Financeiro</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="./dashboard.html"><i class='bx bx-bar-chart-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-food-menu icon'></i>
+                            <span class="text nav-text">Notas Fiscais</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notificações</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-file-blank icon'></i>
+                            <span class="text nav-text">Documentação</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-wrench icon'></i>
+                            <span class="text nav-text">Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <li class="nav-links">
+                    <a href="#"><i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <span class="">Primary</span>
+                <h2 class="notas-fiscais-title">Notas Fiscais</h2>
+            </div>
+            <div class="user-info">
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <input type="search" placeholder="Buscar...">
+                </div>
+                <img src="/src/assets/img/user-profile.png" alt="">
+            </div>
+        </div>
+        <h3 class="table-title">
+            Notas Fiscais
+        </h3>
+        <div class="filter-card">
+            <div class="total-value-note-header">
+                <div class="total-value-note-amount">
+                    <span class="total-value-note-title">
+                        Filtrar por:
+                    </span>
+
+                    <div class="filters">
+                       <span class="filter-text">Status da Nota:</span>
+                        <select class="filtroStatus">
+                            <option value="todos">Todas</option>
+                            <option value="nota-emitida">Nota Emitida</option>
+                            <option value="cobranca-realizada">Cobrança Realizada</option>
+                            <option value="pagamento-realizado">Pagamento atraso</option>
+                          </select>
+                         <span class="filter-text"> Mês de Cobrança:</span>
+                          <select class="filtroDataCobranca">
+                            <option value="00">Todos</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                          </select>
+                         <span class="filter-text">Mês de Pagamento:</span>
+                          <select class="filtroDataPagamento">
+                            
+                            <option value="00">Todos</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                          </select>
+                          
+                         <span class="filter-text">Mês de Pagamento:</span>
+                          <select class="filtroDataPagamento">
+                            
+                            <option value="00">Todos</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                          </select>
+
+                        <div class="btn-group">
+                            Limpar Filtros
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nº de identificação</th>
+                            <th>Data de emissão</th>
+                            <th>Data de cobrança</th>
+                            <th>Data de pagamento</th>
+                            <th>Valor da nota</th>
+                            <th>Documento</th>
+                            <th>Boleto</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usuarios">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="table-filters.js"></script>
+    <script src="close-sidebar.js"></script>
+    <script src="fetch-data.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

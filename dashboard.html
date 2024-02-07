@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/src/assets/img/unecont-favicon.png" type="image/x-icon">
+    <title>Dashboard - Unecont</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/src/assets/img/unecont-logo.png" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="organization">Unecont</span>
+                    <span class="subtitle">Sistema Financeiro</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-bar-chart-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="/notas-fiscais.html"><i class='bx bx-food-menu icon'></i>
+                            <span class="text nav-text">Notas Fiscais</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notificações</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-file-blank icon'></i>
+                            <span class="text nav-text">Documentação</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-links">
+                        <a href="#"><i class='bx bx-wrench icon'></i>
+                            <span class="text nav-text">Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <li class="nav-links">
+                    <a href="#"><i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content">
+       <div class="header-wrapper">
+        <div class="header-title">
+            <span class="">Primary</span>
+            <h2>Dashboard</h2>
+
+            
+        </div>
+        <div class="user-info">
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input type="search" id="" placeholder="Buscar...">
+            </div>
+            <img src="/src/assets/img/user-profile.png" alt="">
+        </div>
+       </div>
+
+       <div class="filter-card">
+        <div class="total-value-note-header">
+            <div class="total-value-note-amount">
+                <span class="total-value-note-title">
+                    Filtrar por:
+                </span>
+
+                <div class="filters">
+                    <span class="filter-text">Mês:</span>
+                          <select class="filtroDataPagamento">
+                            
+                            <option value="00">Todos</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                          </select>
+
+                          <span class="filter-text">Trimestre:</span>
+                          <select class="filtroDataPagamento">
+                            
+                            <option value="00">Todos</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                          </select>
+
+                          <span class="filter-text">Ano:</span>
+                          <select class="filtroDataPagamento">
+                            
+                            <option value="00">2023</option>
+                            <option value="01">2024</option>
+                          </select>
+                      
+                    <div class="btn-group">
+                        Limpar Filtros
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="card-container">
+        <h3 class="main-title">Dados dos Valores Totais das Notas</h3>
+        <div class="card-wrapper">
+            <div class="total-value-note-card">
+                <div class="total-value-note-header">
+                    <div class="total-value-note-amount">
+                        <span class="total-value-note-title">
+                            Total Emitidas:
+                        </span>
+                        <span class="total-value-note-text">
+                            20
+                        </span>
+                    </div>
+                   <i class='bx bx-line-chart total-value-note-icon' ></i>
+                </div>
+                <a href="#">
+                    <span class="total-value-note-detail">Veja mais detalhes</span> <i class='bx bx-plus icon'></i>
+                </a>
+            </div>
+
+            <div class="total-value-note-card">
+                <div class="total-value-note-header">
+                    <div class="total-value-note-amount">
+                        <span class="total-value-note-title">
+                            Total Sem cobrança:
+                        </span>
+                        <span class="total-value-note-text">
+                            20
+                        </span>
+                    </div>
+                    <i class='bx bx-trending-down total-value-note-icon' ></i>
+                </div>
+                <a href="#">
+                    <span class="total-value-note-detail">Veja mais detalhes</span> <i class='bx bx-plus icon'></i>
+                </a>
+            </div>
+
+            <div class="total-value-note-card">
+                <div class="total-value-note-header">
+                    <div class="total-value-note-amount">
+                        <span class="total-value-note-title">
+                            Total Inadimplência:
+                        </span>
+                        <span class="total-value-note-text">
+                            20
+                        </span>
+                    </div>
+                    <i class='bx bx-error-alt total-value-note-icon' ></i>
+                </div>
+                <a href="#">
+                    <span class="total-value-note-detail">Veja mais detalhes</span> <i class='bx bx-plus icon'></i>
+                </a>
+            </div>
+
+            <div class="total-value-note-card">
+                <div class="total-value-note-header">
+                    <div class="total-value-note-amount">
+                        <span class="total-value-note-title">
+                            Prox. ao vencimento:
+                        </span>
+                        <span class="total-value-note-text">
+                           20
+                        </span>
+                    </div>
+                <i class='bx bx-calendar total-value-note-icon' ></i>
+                </div>
+                <a href="#">
+                    <span class="total-value-note-detail">Veja mais detalhes</span> <i class='bx bx-plus total-value-note-plus-icon'></i>
+                </a>
+            </div>
+
+            <div class="total-value-note-card">
+                <div class="total-value-note-header">
+                    <div class="total-value-note-amount">
+                        <span class="total-value-note-title">
+                            Total Pagas:
+                        </span>
+                        <span class="total-value-note-text">
+                            20
+                        </span>
+                    </div>
+                    <i class='bx bx-dollar total-value-note-icon' ></i>
+                </div>
+                <a href="#">
+                    <span class="total-value-note-detail">Veja mais detalhes</span> <i class='bx bx-plus icon'></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="chart-container">
+
+            <div class="chart">
+                <canvas id="myChart"> </canvas>
+    
+                <canvas id="mychart-pie"></canvas>
+              </div>
+        </div>
+        
+
+       </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script>
+        var ctx_pie = document.getElementById("mychart-pie");
+        var pie_chart = new Chart(ctx_pie, {
+	    type: 'pie',
+        data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple"], // number of labels can be changed here. Bar graph has 6 legends but this one for pie has 5.
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 6], // add your data here 
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)', // added extra opacity to reflect highest value
+                'rgba(255, 206, 86, 0.2)', // all of these values can be changed 
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+      </script>
+
+      <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: 'Notas Fiscais',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+      
+    </section>
+    <script src="graphs.js"></script>
+    <script src="close-sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

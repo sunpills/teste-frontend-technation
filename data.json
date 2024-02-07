@@ -1,0 +1,67 @@
+{
+    "usuarios": [
+        {
+            "name":"Subhaan Key",
+            "id":"53463",
+            "created_date":"01/01/2024",
+            "charge_date":"01/01/2024",
+            "payment_date":"Sem Data",
+            "value":"R$ 2.2032,02",
+            "status":"Cobrança Realizada"
+         },
+         {
+            "name":"Tomas Frazier",
+            "id":"23424",
+            "created_date":"01/01/2024",
+            "charge_date":"02/01/2024",
+            "payment_date":"03/05/2024",
+            "value":"R$ 31,25",
+            "status":"Pagamento Realizado"
+         },
+         {
+            "name":"Dawn Richmond",
+            "id":"91363",
+            "created_date":"07/11/2023",
+            "charge_date":"28/11/2023",
+            "payment_date":"Sem Data",
+            "value":"R$ 7.949,06",
+            "status":"Pagamento atrasado"
+         },
+         {
+            "name":"Athena Drake",
+            "id":"53423",
+            "created_date":"23/02/2023",
+            "charge_date":"24/02/2023",
+            "payment_date":"24/02/2023",
+            "value":"R$ 2.2032,02",
+            "status":"Pagamento Realizado"
+         },
+         {
+            "name":"Adriana Meyers",
+            "id":"53463",
+            "created_date":"23/02/2023",
+            "charge_date":"24/02/2023",
+            "payment_date":"25/02/2023",
+            "value":"R$ 2.2032,02",
+            "status":"Nota Emitida"
+         },
+         {
+            "name":"Zack Morton",
+            "id":"53463",
+            "created_date":"23/02/2023",
+            "charge_date":"24/02/2023",
+            "payment_date":"25/02/2023",
+            "value":"R$ 2.2032,02",
+            "status":"Pagamento Realizado"
+         },
+         {
+            "name":"Brett Erickson",
+            "id":"53463",
+            "created_date":"23/02/2023",
+            "charge_date":"24/02/2023",
+            "payment_date":"25/02/2023",
+            "value":"R$ 2.2032,02",
+            "status":"Pagamento Atrasado"
+         }
+    ]
+}
