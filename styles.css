@@ -467,6 +467,25 @@ tfoot td {
     cursor: pointer;
 }
 
+.table-icons {
+    color: var(--text-color);
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 1.0rem;
+    background: transparent;
+}
+
+strong {
+    font-size: 10px;
+}
+
+bx {
+    font-weight: 300;
+}
 
 
 /* Para sobrescrever as propriedades do CSS do BootStrap */
