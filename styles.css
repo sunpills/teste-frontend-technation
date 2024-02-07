@@ -264,6 +264,7 @@ input:focus {
 .main-title {
     color: var(--primary-color-light);
     padding-bottom: 10px;
+    padding-top: 1rem;
     font-size: 15px;
     text-transform: uppercase;
 }
@@ -399,7 +400,7 @@ select {
     padding-bottom: 10px;
     font-size: 15px;
     text-transform: uppercase;
-    padding-left: 35px;
+    padding-top: 1rem;
     font-weight: bold;
 }
 
