@@ -43,10 +43,10 @@ function mostrarValor(usuarios) {
                 <th class="users-data">${usuario.charge_date}</th>
                 <th class="users-data">${usuario.payment_date}</th>
                 <th class="users-data">${usuario.value}</th>
-                <th class="users-data">Documento</th>
-                <th class="users-data">Boleto</th>
+                <th class="users-data"><i class='bx bxs-file-doc table-icons'> <strong>Visualizar</strong></i></th>
+                <th class="users-data"><i class='bx bx-file table-icons'> <strong>Baixar</strong></i></th>
                 <th class="users-data">${usuario.status}</th>
-                <th class="users-data">Editar <i class='bx bx-edit-alt'></i>
+                <th class="users-data"><i class='bx bx-edit-alt table-icons'> <strong>Editar</strong></i>
                 </th>
                 </tr>
 `
