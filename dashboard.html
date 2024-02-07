@@ -124,8 +124,10 @@
                           <select class="filtroDataPagamento">
                             
                             <option value="00">Todos</option>
-                            <option value="01">Janeiro</option>
-                            <option value="02">Fevereiro</option>
+                            <option value="01">Primeiro Trimestre</option>
+                            <option value="01">Segundo Trimestre</option>
+                            <option value="01">Terceiro Trimestre</option>
+                            <option value="01">Quarto Trimestre</option>
                           </select>
 
                           <span class="filter-text">Ano:</span>
@@ -250,14 +252,14 @@
         var pie_chart = new Chart(ctx_pie, {
 	    type: 'pie',
         data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple"], // number of labels can be changed here. Bar graph has 6 legends but this one for pie has 5.
+        labels: ["Emitidas", "S. Cobrança", "Inadimplência", "Prox. Ao Venc.", "Total Pagas"],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 6], // add your data here 
+            data: [12, 19, 3, 5, 6], 
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)', // added extra opacity to reflect highest value
-                'rgba(255, 206, 86, 0.2)', // all of these values can be changed 
+                'rgba(54, 162, 235, 0.2)', 
+                'rgba(255, 206, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)'
             ],
@@ -290,7 +292,7 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['Emitidas', 'S. Cobrança', 'Inadimplência', 'Prox. Ao Venc.', 'Total Pagas'],
             datasets: [{
               label: 'Notas Fiscais',
               data: [12, 19, 3, 5, 2, 3],
